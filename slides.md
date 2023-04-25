@@ -62,23 +62,3 @@ Text to animate
     transition: scale(0)
 }
 </style>
-
----
-preload: false
----
-
-# Motion
-
-<div
-    v-motion
-    :initial="{ x: 80, y: 80, opacity: 0 }"
-    :enter="{ x: 0, y: 0, opacity: 1, transition: {
-        type: 'spring',
-        damping: 10,
-        stiffness: 20,
-        mass: 4,
-        delay: 1000,
-        duration: 2000
-    } }">
-    <img src="images/awesome.jpg" style="margin: auto; width: 80%" />
-</div>
